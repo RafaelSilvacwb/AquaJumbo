@@ -4,57 +4,63 @@
     box-sizing: border-box;
 
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: white;
+    color: black;
 
 }
 
 body {
 
-    background-color: black;
+
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .menu {
-    position: absolute;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 90px;
+
+
+
 }
 
 header {
-    border: solid 1px black;
     position: fixed;
-    background-color: white;
+    background-color: rgb(52, 52, 131);
     margin-top: 0px;
-
     width: 100vw;
-    height: 60px;
+    height: 80px;
 }
 
 
 
 
 .menu ul {
+    margin: 0px 10px 10px 0;
+
     font-size: 50px;
     list-style-type: none;
-    width: 100vw;
+    width: fit-content;
+    float: left;
     height: 50px;
     padding-left: 10PX;
     padding-top: 5px;
     gap: 4rem;
     position: absolute;
     display: flex;
-    justify-items: center;
+    justify-items: left;
 
 
 
 }
 
 .menu a {
-    float: right;
-    align-self: center;
+
     font-size: large;
     position: relative;
-    color: rgb(69, 155, 20);
+    color: rgb(255, 255, 255);
     text-decoration: none;
 }
 
@@ -64,8 +70,8 @@ a::before {
     border-radius: 50px;
     width: 0;
     height: 4px;
-    margin-bottom: -6px;
-    background-color: black;
+    margin-bottom: 0px;
+    background-color: rgb(255, 255, 255);
     bottom: 0;
 
 
@@ -74,8 +80,15 @@ a::before {
 a:hover::before {
     width: 100%;
     transition: 0.5s;
-    background-color: black;
+    background-color: rgb(255, 253, 253);
 
+}
+
+.section aside {
+    position: absolute;
+
+    width: 30%;
+    height: auto;
 }
 
 .section {
@@ -87,23 +100,19 @@ a:hover::before {
 }
 
 .section section {
-    background-color: green;
-
-    width: 100%;
-    height: max-content;
-
-
-
+    background: green;
 }
 
-
 .section h1 {
-
-    opacity: 1;
+    color: white;
+    width: 90%;
+    margin: 0 5% 0 5%;
+    background-color: rgb(52, 52, 131);
     text-align: center;
 }
 
 .section p {
+
     text-align: justify;
     margin: 0 5% 0 5%;
     font-size: 20px;
@@ -125,18 +134,17 @@ a:hover::before {
 }
 
 .fish-list ol {
+    list-style: none;
     list-style-position: inside;
     font-size: 30px;
     text-align: center;
     align-items: center;
 
 }
-
-@media (min-width: 200px) {
-    .section aside {
-        display: none;
-    }
-
-    .section {
-        width: 100%;
-    }
+.fish-list li{
+    border-radius: 5px;
+    background-color: rgb(52, 52, 131);
+    width: fit-content;
+    color: white;
+    margin: auto;
+}
