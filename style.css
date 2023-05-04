@@ -21,7 +21,9 @@ body {
 }
 
 .menu {
-    background-color: green;
+    position: fixed;
+    background-image: url(./BAckground/29143.jpg);
+    background-color: rgb(52, 52, 131);
     display: flex;
     justify-content: center;
     width: 100%;
@@ -97,8 +99,8 @@ a:hover::before {
 }
 
 .section {
-    display: flex;
-
+    
+    
     width: 100%;
     height: 800px;
 }
@@ -109,7 +111,7 @@ a:hover::before {
     color: white;
     width: 90%;
     margin: 0 5% 0 5%;
-    background-color: rgb(52, 52, 131);
+    background-image: url(./BAckground/29143.jpg);
     text-align: center;
 }
 
@@ -146,7 +148,7 @@ a:hover::before {
 }
 .fish-list li{
     border-radius: 5px;
-    background-color: rgb(52, 52, 131);
+    background-image: url(./BAckground/29143.jpg);
     width: fit-content;
     color: white;
     margin: auto;
@@ -171,10 +173,17 @@ a:hover::before {
     width: auto;
     color: red;
 }
+.fa-linkedin:hover{
+    transform: scale(1.1);
+    
+}
 footer{
+    background-image: url(./BAckground/29143.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     background-color: rgb(52, 52, 131);
-    margin: 0 5% 0 5%;
-    width: 90%;
+    
+    width: 100%;
     height: 300px;
 }
 .redes-sociais{
@@ -183,7 +192,10 @@ footer{
     justify-content: center;
     gap: 20px;
     font-size: 25px;
-    background-color: gray;
+    
     width: 100%;
     height: 50px;
+}
+.redes-sociais background-color{
+    opacity: 1;
 }
