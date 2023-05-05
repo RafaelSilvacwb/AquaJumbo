@@ -2,22 +2,44 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: black;
+
 
 }
 
-body {
 
-
-    background-attachment: fixed;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-.container{
-    width: auto;
+body .right {
+    margin: 60px 0 0 85%;
+    position: fixed;
+    background-color: blue;
+    width: 15%;
     height: 100vh;
+}
+
+.info-curiosity {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    width: 100%;
+    height: 50vh;
+    background-color: transparent;
+}
+
+.info-curiosity h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    font-size: 100%;
+}
+
+body .left {
+    margin: 60px 0 0 0;
+    position: fixed;
+    background-color: blue;
+    width: 15%;
+    height: 100%;
 }
 
 .menu {
@@ -27,7 +49,7 @@ body {
     display: flex;
     justify-content: center;
     width: 100%;
-    height: 90px;
+    height: 60px;
 
 
 
@@ -37,7 +59,7 @@ header {
     position: fixed;
     background-color: rgb(52, 52, 131);
     margin-top: 0px;
-    width: 100vw;
+    width: 100%;
     height: 80px;
 }
 
@@ -65,7 +87,7 @@ header {
 
 .menu a {
 
-    font-size: large;
+    font-size: 40%;
     position: relative;
     color: rgb(255, 255, 255);
     text-decoration: none;
@@ -91,21 +113,12 @@ a:hover::before {
 
 }
 
-.section aside {
-    position: absolute;
-
-    width: 30%;
-    height: auto;
+section {
+    margin: 0 0 0 15%;
+    background-color: green;
+    width: 70%;
+    height: 100%;
 }
-
-.section {
-    
-    
-    width: 100%;
-    height: 800px;
-}
-
-
 
 .section h1 {
     color: white;
@@ -118,17 +131,21 @@ a:hover::before {
 .section p {
 
     text-align: justify;
-    margin: 0 5% 0 5%;
-    font-size: 20px;
+    margin: 0 15% 0 15%;
+    font-size: 15px;
 }
 
 .section img {
-    box-shadow: 10px 10px.;
+
     border-radius: 5px;
     display: flex;
     width: 80%;
     margin: 0 10% 0 10%;
     height: auto;
+}
+
+.fish-list {
+    background-color: red;
 }
 
 .fish-list img {
@@ -141,61 +158,158 @@ a:hover::before {
 .fish-list ol {
     list-style: none;
     list-style-position: inside;
-    font-size: 30px;
+    font-size: 15px;
     text-align: center;
     align-items: center;
 
 }
-.fish-list li{
+
+.fish-list li {
     border-radius: 5px;
     background-image: url(./BAckground/29143.jpg);
     width: fit-content;
     color: white;
     margin: auto;
 }
-.logo{
+
+.logo {
     width: 400px;
     height: 90px;
     position: absolute;
     background-color: white;
 }
-.fa-whatsapp{  
-   
-    color: #25d366;
 
-}
-.fa-facebook{
+.fa-youtube {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    padding: 3px 5PX 0 5px;
     cursor: pointer;
-    color: #3b5998;
-}
-.fa-linkedin{
+    width: fit-content;
+    width: 70px;
+    height: 20px;
+    background-color: #c4302b;
+    color: white;
 
-    width: auto;
-    color: red;
 }
-.fa-linkedin:hover{
+
+.fa-whatsapp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    padding: 3px 5PX 0 5px;
+    cursor: pointer;
+    width: fit-content;
+    width: 70px;
+    height: 20px;
+    background-color: #25d366;
+    color: white;
+
+}
+
+.fa-pinterest-p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    padding: 3px 5PX 0 5px;
+    cursor: pointer;
+    width: fit-content;
+    width: 70px;
+    height: 20px;
+    background-color: #c8232c;
+    cursor: pointer;
+    color: white;
+}
+
+.fa-facebook-f {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    padding: 3px 5PX 0 5px;
+    cursor: pointer;
+    width: fit-content;
+    width: 70px;
+    height: 20px;
+    background-color: #3b5998;
+    cursor: pointer;
+    color: white;
+}
+
+.fa-linkedin-in {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    padding: 3px 5PX 0 5px;
+    cursor: pointer;
+    width: fit-content;
+    width: 70px;
+    height: 20px;
+    background-color: #0072b1;
+    color: white;
+}
+
+.fa-linkedin-in:hover {
     transform: scale(1.1);
-    
+
 }
-footer{
-    background-image: url(./BAckground/29143.jpg);
+
+footer {
+
+    position: absolute;
+    background-color: white;
     background-repeat: no-repeat;
     background-size: cover;
     background-color: rgb(52, 52, 131);
-    
+
     width: 100%;
-    height: 300px;
+    height: 130px;
 }
-.redes-sociais{
+
+.redes-sociais {
     place-items: center;
     display: flex;
     justify-content: center;
     gap: 20px;
-    font-size: 25px;
-    
+    font-size: 15px;
     width: 100%;
     height: 50px;
 }
-.redes-sociais background-color{
-    opacity: 1;
+
+a {
+    text-decoration: none;
+}
+
+@media (min-width: 500px) {
+    body .left {
+        display: none;
+    }
+
+    body .right {
+        display: none;
+    }
+
+    section {
+        width: 100%;
+        margin: 0;
+    }
+
+    .section p {
+        text-align: justify;
+        margin: 0 5% 0 5%;
+        font-size: 15px;
+    }
+
+    .section img {
+        border-radius: 5px;
+        display: flex;
+        width: 90%;
+        height: auto;
+        margin: 0 5% 0 5%;
+        
+    }
 }
