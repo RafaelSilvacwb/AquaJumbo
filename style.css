@@ -8,46 +8,20 @@
 }
 
 body {
-    background-color: #c4302b;
-}
-
-body .right {
-    margin: 60px 0 0 85%;
-    position: fixed;
-    background-color: blue;
-    width: 15%;
+    background-image: url(./img/tIqRXir-aquarium-background-pictures.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: cover;
     height: 100vh;
 }
 
-.info-curiosity {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    width: 100%;
-    height: 50vh;
-    background-color: transparent;
-}
-
-.info-curiosity h1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 80%;
-    font-size: 100%;
-}
-
-body .left {
-    margin: 60px 0 0 0;
-    position: fixed;
-    background-color: blue;
-    width: 15%;
-    height: 100%;
-}
-
 .menu {
+    border-radius: 0 0 50px 50px;
+
+    border-style: ridge;
     position: fixed;
-    background-image: url(./BAckground/29143.jpg);
+    
+    
     background-color: rgb(52, 52, 131);
     display: flex;
     justify-content: center;
@@ -58,20 +32,8 @@ body .left {
 
 }
 
-header {
-    position: fixed;
-    background-color: rgb(52, 52, 131);
-    margin-top: 0px;
-    width: 100%;
-    height: 80px;
-}
-
-
-
-
 .menu ul {
     margin: 0px 10px 10px 0;
-
     font-size: 50px;
     list-style-type: none;
     width: fit-content;
@@ -96,7 +58,7 @@ header {
     text-decoration: none;
 }
 
-a::before {
+.menu a::before {
     content: "";
     position: absolute;
     border-radius: 50px;
@@ -109,7 +71,7 @@ a::before {
 
 }
 
-a:hover::before {
+.menu a:hover::before {
     width: 100%;
     transition: 0.5s;
     background-color: rgb(255, 253, 253);
@@ -118,7 +80,7 @@ a:hover::before {
 
 section {
     margin: 0 0 0 15%;
-    background-color: green;
+    
     width: 70%;
     height: 100%;
 }
@@ -157,7 +119,15 @@ section {
     width: 70%;
     height: auto;
 }
-
+aside{
+    margin-left: 5px;
+    padding-top: 2px;
+    display: grid;
+    position: fixed;
+    margin-top: 190px;
+    width: 50px;
+    height: 330px;
+}
 .fish-list ol {
     list-style: none;
     list-style-position: inside;
@@ -168,8 +138,10 @@ section {
 }
 
 .fish-list li {
-    border-radius: 5px;
-    background-image: url(./BAckground/29143.jpg);
+    padding: 5px;
+    border-radius: 20px;
+    border-style: ridge;
+    background-color: rgb(52, 52, 131);
     width: fit-content;
     color: white;
     margin: auto;
@@ -181,11 +153,11 @@ section {
     justify-content: center;
     align-items: center;
     border-radius: 5px;
-    padding: 3px 5PX 0 5px;
+    
     cursor: pointer;
     width: fit-content;
-    width: 70px;
-    height: 20px;
+    width: 50px;
+    height: 50px;
     background-color: #c4302b;
     color: white;
 
@@ -196,11 +168,11 @@ section {
     justify-content: center;
     align-items: center;
     border-radius: 5px;
-    padding: 3px 5PX 0 5px;
+    
     cursor: pointer;
     width: fit-content;
-    width: 70px;
-    height: 20px;
+    width: 50px;
+    height: 50px;
     background-color: #25d366;
     color: white;
 
@@ -211,11 +183,11 @@ section {
     justify-content: center;
     align-items: center;
     border-radius: 5px;
-    padding: 3px 5PX 0 5px;
+    margin: auto;
     cursor: pointer;
     width: fit-content;
-    width: 70px;
-    height: 20px;
+    width: 50px;
+    height: 50px;
     background-color: #c8232c;
     cursor: pointer;
     color: white;
@@ -229,8 +201,8 @@ section {
     padding: 3px 5PX 0 5px;
     cursor: pointer;
     width: fit-content;
-    width: 70px;
-    height: 20px;
+    width: 50px;
+    height: 50px;
     background-color: #3b5998;
     cursor: pointer;
     color: white;
@@ -244,26 +216,46 @@ section {
     padding: 3px 5PX 0 5px;
     cursor: pointer;
     width: fit-content;
-    width: 70px;
-    height: 20px;
+    width: 50px;
+    height: 50px;
     background-color: #0072b1;
     color: white;
 }
 
+.fa-youtube:hover {
+    transform: scale(1.1);
+}
 .fa-linkedin-in:hover {
     transform: scale(1.1);
+}
+.fa-facebook-f:hover {
+    transform: scale(1.1);
+}
+.fa-pinterest-p:hover {
+    transform: scale(1.1);
+}
+.fa-whatsapp:hover {
+    transform: scale(1.1);
+}
 
+
+.redes-sociais {
+    display: flex;
+    gap: 2rem;
+}
+.redes-sociais .fa-youtube, .fa-linkedin-in, .fa-facebook-f, .fa-whatsapp, .fa-pinterest-p{
+    width: 50px;
+    border-radius: 50px;
 }
 
 footer {
+
     display: flex;
     position: absolute;
     justify-content: center;
     align-items: center;
     gap: 2rem;
-
     background-color: white;
-
     width: 100%;
     height: 130px;
 }
@@ -273,21 +265,8 @@ a {
     text-decoration: none;
 }
 
-@media (max-width: 1080px) {
-    body {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
-
-    body .left {
-        display: none;
-    }
-
-    body .right {
-        display: none;
-    }
-
+@media (max-width: 914px) {
+   
     section {
         width: 100%;
         margin: 0;
@@ -308,8 +287,9 @@ a {
 
     }
 
-    footer {
+    .redes-sociais {
         display: flex;
+        grid-template-columns: auto;
         position: absolute;
         justify-content: center;
         align-items: center;
@@ -320,5 +300,13 @@ a {
         width: 100%;
         height: 130px;
 
+    }
+    aside{
+        display: none;
+    }
+}
+@media (min-width: 914px){
+    footer .redes-sociais{
+        display: none;
     }
 }
