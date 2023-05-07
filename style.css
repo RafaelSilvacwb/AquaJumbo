@@ -8,7 +8,7 @@
 }
 
 body {
-    background-image: url(./img/tIqRXir-aquarium-background-pictures.jpg);
+    background-color: white;
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: cover;
@@ -17,11 +17,7 @@ body {
 
 .menu {
     border-radius: 0 0 50px 50px;
-
-    border-style: ridge;
     position: fixed;
-    
-    
     background-color: rgb(52, 52, 131);
     display: flex;
     justify-content: center;
@@ -51,8 +47,8 @@ body {
 }
 
 .menu a {
-
-    font-size: 40%;
+    margin-top: 10PX;
+    font-size: 20px;
     position: relative;
     color: rgb(255, 255, 255);
     text-decoration: none;
@@ -63,8 +59,8 @@ body {
     position: absolute;
     border-radius: 50px;
     width: 0;
-    height: 4px;
-    margin-bottom: 0px;
+    height: 2px;
+    margin-bottom: 3px;
     background-color: rgb(255, 255, 255);
     bottom: 0;
 
@@ -80,16 +76,16 @@ body {
 
 section {
     margin: 0 0 0 15%;
-    
     width: 70%;
     height: 100%;
 }
 
 .section h1 {
-    color: white;
+
+    color: black;
     width: 90%;
     margin: 0 5% 0 5%;
-    background-image: url(./BAckground/29143.jpg);
+    background-image: none;
     text-align: center;
 }
 
@@ -110,7 +106,7 @@ section {
 }
 
 .fish-list {
-    background-color: red;
+    ;
 }
 
 .fish-list img {
@@ -119,7 +115,8 @@ section {
     width: 70%;
     height: auto;
 }
-aside{
+
+aside {
     margin-left: 5px;
     padding-top: 2px;
     display: grid;
@@ -128,6 +125,7 @@ aside{
     width: 50px;
     height: 330px;
 }
+
 .fish-list ol {
     list-style: none;
     list-style-position: inside;
@@ -149,11 +147,12 @@ aside{
 
 
 .fa-youtube {
+    transform: translate(0px);
+    animation: float 1s ease-in-out both;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 5px;
-    
     cursor: pointer;
     width: fit-content;
     width: 50px;
@@ -164,11 +163,13 @@ aside{
 }
 
 .fa-whatsapp {
+    transform: translate(0px);
+    animation: float 1s ease-in-out both;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 5px;
-    
+
     cursor: pointer;
     width: fit-content;
     width: 50px;
@@ -179,6 +180,8 @@ aside{
 }
 
 .fa-pinterest-p {
+    transform: translate(0px);
+    animation: float 1s ease-in-out both;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -194,6 +197,8 @@ aside{
 }
 
 .fa-facebook-f {
+    transform: translate(0px);
+    animation: facebook 1s ease-in-out both;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -209,6 +214,8 @@ aside{
 }
 
 .fa-linkedin-in {
+    transform: translate(0px);
+    animation: 1s ease-in-out both;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -222,18 +229,36 @@ aside{
     color: white;
 }
 
+@keyframes {
+    0% {
+        transform: translatex(0px);
+    }
+
+    50% {
+        transform: translatex(20px);
+    }
+
+    100% {
+        transform: translatex(0px);
+    }
+}
+
 .fa-youtube:hover {
     transform: scale(1.1);
 }
+
 .fa-linkedin-in:hover {
     transform: scale(1.1);
 }
+
 .fa-facebook-f:hover {
     transform: scale(1.1);
 }
+
 .fa-pinterest-p:hover {
     transform: scale(1.1);
 }
+
 .fa-whatsapp:hover {
     transform: scale(1.1);
 }
@@ -243,19 +268,25 @@ aside{
     display: flex;
     gap: 2rem;
 }
-.redes-sociais .fa-youtube, .fa-linkedin-in, .fa-facebook-f, .fa-whatsapp, .fa-pinterest-p{
+
+.fa-youtube,
+.fa-linkedin-in,
+.fa-facebook-f,
+.fa-whatsapp,
+.fa-pinterest-p {
     width: 50px;
     border-radius: 50px;
 }
 
 footer {
-
+    border-top: solid 1px black;
     display: flex;
     position: absolute;
     justify-content: center;
     align-items: center;
     gap: 2rem;
-    background-color: white;
+    background-color: rgb(52, 52, 131);
+    ;
     width: 100%;
     height: 130px;
 }
@@ -266,7 +297,7 @@ a {
 }
 
 @media (max-width: 914px) {
-   
+
     section {
         width: 100%;
         margin: 0;
@@ -301,12 +332,14 @@ a {
         height: 130px;
 
     }
-    aside{
+
+    aside {
         display: none;
     }
 }
-@media (min-width: 914px){
-    footer .redes-sociais{
+
+@media (min-width: 914px) {
+    footer .redes-sociais {
         display: none;
     }
 }
