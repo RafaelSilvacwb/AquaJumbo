@@ -15,11 +15,6 @@ body {
     height: 100vh;
 }
 
-#checkbox-menu {
-    position: absolute;
-    opacity: 0;
-}
-
 .menu {
 
     position: fixed;
@@ -77,6 +72,9 @@ body {
     transition: 0.5s;
     background-color: rgb(255, 253, 253);
 
+}
+#itens{
+    display: none;
 }
 
 section {
@@ -154,7 +152,7 @@ aside {
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 5px;
+    border-radius: px;
     cursor: pointer;
     width: fit-content;
     width: 50px;
@@ -237,12 +235,17 @@ aside {
     }
 
     50% {
-        transform : translatex(20px);
+        transform: translatex(20px);
     }
 
     100% {
-        transform : translatex(0px);
+        transform: translatex(0px);
     }
+}
+
+#check {
+    position: absolute;
+    display: none;
 }
 
 .fa-youtube:hover {
@@ -252,6 +255,7 @@ aside {
 .fa-linkedin-in:hover {
     transform: scale(1.1);
 }
+
 
 .fa-facebook-f:hover {
     transform: scale(1.1);
@@ -268,7 +272,7 @@ aside {
 
 .redes-sociais {
     display: flex;
-    gap: 2rem;
+    gap: 5px;
 }
 
 .fa-youtube,
@@ -276,19 +280,18 @@ aside {
 .fa-facebook-f,
 .fa-whatsapp,
 .fa-pinterest-p {
+
     width: 50px;
     border-radius: 50px;
 }
 
 footer {
-    border-top: solid 1px black;
+    background-color: black;
     display: flex;
     position: absolute;
     justify-content: center;
     align-items: center;
-    gap: 2rem;
     background-color: rgb(52, 52, 131);
-    ;
     width: 100%;
     height: 130px;
 }
@@ -298,77 +301,73 @@ a {
     text-decoration: none;
 }
 
-@media (max-width: 1080px) {
-    
+label {
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    display: flex;
+    width: 100%;
+    height: 60px;
+
+}
+
+.fa-bars {
+    display: none;
+}
+
+@media (max-width: 800px) {
+
+    #itens {
+
+        position: fixed;
+        margin-top: 60px;
+        text-align: center;
+        background-color: white;
+        margin: 60px 10% 0 10%;
+        width: 80%;
+        height: 200px;
+    }
+
+    #itens li {
+
+        background-color: rgb(52, 52, 131);
+        transition: 0.3s all;
+        margin: 2px;
+    }
+
+    #itens a {
+        color: white;
+    }
+
+    menu li {
+        margin: 15px;
+        list-style-type: none;
+    }
+
+    .fa-bars {
+        cursor: pointer;
+        font-size: 50px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        color: white;
+        width: 50px;
+        height: 50px;
+
+    }
+
+    .redes-sociais {
+
+        background-color: green;
+        font-size: 20px
+    }
+
 
     .menu ul {
         border-radius: ;
         display: none;
-    }
-
-    #checkbox-menu {
-        position: absolute;
-        opacity: 0;
-    }
-
-    .menu .mobile-menu {
-        display: block;
-        padding-top: 15px;
-        justify-content: center;
-        align-items: center;
-        width: 50px;
-
-
-
-    }
-
-    label {
-        
-        cursor: pointer;
-        position: relative;
-        display: block;
-        height: 60px;
-        width: 60px;
-    }
-
-    label span {
-        position: absolute;
-        display: block;
-        margin-left: 10%;
-        margin-right: 10%;
-        margin-top: 20%;
-        border-radius: 30px;
-        background-color: white;
-        width: 80%;
-        height: 7px;
-        transition: 0.25s ease-in-out;
-
-    }
-
-    label span:nth-child(1) {
-        top: 0;
-    }
-
-    label span:nth-child(2) {
-        top: 15px;
-    }
-
-    label span:nth-child(3) {
-        top: 30px;
-    }
-
-    #checkbox-menu:checked+label span:nth-child(1) {
-        transform: rotate(-45deg);
-        top: 20%;
-    }
-
-    #checkbox-menu:checked+label span:nth-child(2) {
-        opacity: 0;
-    }
-
-    #checkbox-menu:checked+label span:nth-child(3) {
-        transform: rotate(45deg);
-        top: 20%;
     }
 
     section {
@@ -391,18 +390,22 @@ a {
 
     }
 
-    .redes-sociais {
+    footer .redes-sociais {
+        padding-bottom: 80px;
+        font-size: 15px;
         display: flex;
-        grid-template-columns: auto;
         position: absolute;
         justify-content: center;
         align-items: center;
-        gap: 2rem;
-
-        background-color: white;
-
+        background-color: rgb(52, 52, 131);
         width: 100%;
-        height: 130px;
+        height: 100%;
+
+    }
+
+    footer .redes-sociais i {
+        width: 30px;
+        height: 30px;
 
     }
 
@@ -411,8 +414,11 @@ a {
     }
 }
 
-@media (min-width: 412px) {
+@media (min-width: 450) {
+
     footer .redes-sociais {
         display: none;
     }
+
+
 }
