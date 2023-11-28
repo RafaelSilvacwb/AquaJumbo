@@ -1,280 +1,258 @@
 * {
-    margin: 0;
-    padding: 0;
-    font-size: 20px;
-    box-sizing: border-box;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-
-
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  box-sizing: border-box;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
-
+footer .redes-sociais {
+  gap: 40px;
+}
 body {
-    background-color: white;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-position: cover;
-    height: 100vh;
+  background-color: white;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: cover;
+  height: 100vh;
 }
 
 .menu {
-
-    position: fixed;
-    background-color: rgb(52, 52, 131);
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    height: 60px;
-
-
-
+  position: fixed;
+  background-color: rgb(134, 134, 134);
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 60px;
 }
 
 .menu ul {
-    margin: 0px 10px 10px 0;
-    font-size: 50px;
-    list-style-type: none;
-    width: fit-content;
-    float: left;
-    height: 50px;
-    padding-left: 10PX;
-    padding-top: 5px;
-    gap: 4rem;
-    position: absolute;
-    display: flex;
-    justify-items: left;
+  margin: 0px 10px 10px 0;
+  font-size: 50px;
+  list-style-type: none;
+  width: fit-content;
+  float: left;
+  height: 50px;
+  padding-left: 10px;
 
-
-
+  position: absolute;
+  display: flex;
+  justify-items: left;
 }
 
 .menu a {
-    margin-top: 10PX;
-    font-size: 20px;
-    position: relative;
-    color: rgb(255, 255, 255);
-    text-decoration: none;
+  border-left: SOLID 1px rgb(90, 90, 90);
+
+  padding: 20px;
+  font-size: 15px;
+  position: relative;
+  display: flex;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  height: 60px;
 }
 
-.menu a::before {
-    content: "";
-    position: absolute;
-    border-radius: 50px;
-    width: 0;
-    height: 2px;
-    margin-bottom: 3px;
-    background-color: rgb(255, 255, 255);
-    bottom: 0;
-
-
-}
-
-.menu a:hover::before {
-    width: 100%;
-    transition: 0.5s;
-    background-color: rgb(255, 253, 253);
-
+.menu a:hover {
+  background-color: rgb(0, 0, 0);
+  color: white;
+  border-left: solid 1px white;
+  border-right: solid 1px white;
 }
 
 #itens {
-    display: none;
+  display: none;
 }
 
 section {
-    margin: 0 0 0 15%;
-    width: 70%;
-    height: 100%;
+  padding-top: 20%;
+  margin: 0 0 0 15%;
+  width: 70%;
+  height: 100%;
 }
 
 .section h1 {
-
-    color: black;
-    width: 90%;
-    margin: 0 5% 0 5%;
-    background-image: none;
-    text-align: center;
+  color: black;
+  width: 90%;
+  margin: 0 5% 0 5%;
+  background-image: none;
+  text-align: center;
 }
 
 .section p {
-
-    text-align: justify;
-    margin: 0 15% 0 15%;
-    font-size: 15px;
+  text-align: justify;
+  margin: 0 15% 0 15%;
+  font-size: 15px;
 }
 
 .section img {
-
-    border-radius: 5px;
-    display: flex;
-    width: 80%;
-    margin: 0 10% 0 10%;
-    height: auto;
+  border-radius: 5px;
+  display: flex;
+  width: 80%;
+  margin: 0 10% 0 10%;
+  height: auto;
 }
 
-
 .fish-list img {
-    display: grid;
-    margin: 0 15% 0 15%;
-    width: 70%;
-    height: auto;
+  display: grid;
+  margin: 0 15% 0 15%;
+  width: 70%;
+  height: auto;
 }
 
 aside {
-    margin-left: 5px;
-    padding-top: 2px;
-    display: grid;
-    position: fixed;
-    margin-top: 190px;
-    width: 50px;
-    height: 330px;
+  position: fixed;
+  background-color: #cccccc;
+  margin-bottom: 240px;
+  padding-top: 2px;
+  display: grid;
+  align-content: center;
+  margin-top: 70px;
+  width: 20%;
+  height: 80%;
 }
 
 .fish-list ol {
-    list-style: none;
-    list-style-position: inside;
-    font-size: 15px;
-    text-align: center;
-    align-items: center;
-
+  list-style: none;
+  list-style-position: inside;
+  font-size: 15px;
+  text-align: center;
+  align-items: center;
 }
 
 .fish-list li {
-    padding: 5px;
-    border-radius: 20px;
-    border-style: ridge;
-    background-color: rgb(52, 52, 131);
-    width: fit-content;
-    color: white;
-    margin: auto;
+  padding: 5px;
+  border-radius: 8px;
+  box-shadow: 0 0 5px 5px black;
+
+  background-color: rgb(0, 0, 0);
+  width: fit-content;
+  color: white;
+  margin: auto;
 }
 
-
 .fa-youtube {
-    transform: translate(0px);
-    animation: float 1s ease-in-out both;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: px;
-    cursor: pointer;
-    width: fit-content;
-    width: 50px;
-    height: 50px;
-    background-color: #c4302b;
-    color: white;
-
+  transform: translate(0px);
+  animation: float 1s ease-in-out both;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: px;
+  cursor: pointer;
+  width: fit-content;
+  width: 50px;
+  height: 50px;
+  background-color: #c4302b;
+  color: white;
 }
 
 .fa-whatsapp {
-    transform: translate(0px);
-    animation: float 1s ease-in-out both;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 5px;
+  transform: translate(0px);
+  animation: float 1s ease-in-out both;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
 
-    cursor: pointer;
-    width: fit-content;
-    width: 50px;
-    height: 50px;
-    background-color: #25d366;
-    color: white;
-
+  cursor: pointer;
+  width: fit-content;
+  width: 50px;
+  height: 50px;
+  background-color: #25d366;
+  color: white;
 }
 
 .fa-pinterest-p {
-    transform: translate(0px);
-    animation: float 1s ease-in-out both;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 5px;
-    margin: auto;
-    cursor: pointer;
-    width: fit-content;
-    width: 50px;
-    height: 50px;
-    background-color: #c8232c;
-    cursor: pointer;
-    color: white;
+  transform: translate(0px);
+  animation: float 1s ease-in-out both;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  margin: auto;
+  cursor: pointer;
+  width: fit-content;
+  width: 50px;
+  height: 50px;
+  background-color: #c8232c;
+  cursor: pointer;
+  color: white;
 }
 
 .fa-facebook-f {
-    transform: translate(0px);
-    animation: facebook 1s ease-in-out both;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 5px;
-    padding: 3px 5PX 0 5px;
-    cursor: pointer;
-    width: fit-content;
-    width: 50px;
-    height: 50px;
-    background-color: #3b5998;
-    cursor: pointer;
-    color: white;
+  transform: translate(0px);
+  animation: facebook 1s ease-in-out both;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  padding: 3px 5px 0 5px;
+  cursor: pointer;
+  width: fit-content;
+  width: 50px;
+  height: 50px;
+  background-color: #3b5998;
+  cursor: pointer;
+  color: white;
 }
 
 .fa-linkedin-in {
-    transform: translate(0px);
-    animation: 1s ease-in-out both;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 5px;
-    padding: 3px 5PX 0 5px;
-    cursor: pointer;
-    width: fit-content;
-    width: 50px;
-    height: 50px;
-    background-color: #0072b1;
-    color: white;
+  transform: translate(0px);
+  animation: 1s ease-in-out both;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  padding: 3px 5px 0 5px;
+  cursor: pointer;
+  width: fit-content;
+  width: 50px;
+  height: 50px;
+  background-color: #0072b1;
+  color: white;
 }
 
 @keyframes {
-    0% {
-        transform: translatex(0px);
-    }
+  0% {
+    transform: translatex(0px);
+  }
 
-    50% {
-        transform: translatex(20px);
-    }
+  50% {
+    transform: translatex(20px);
+  }
 
-    100% {
-        transform: translatex(0px);
-    }
+  100% {
+    transform: translatex(0px);
+  }
 }
 
 #check {
-    position: absolute;
-    display: none;
+  position: absolute;
+  display: none;
 }
 
 .fa-youtube:hover {
-    transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .fa-linkedin-in:hover {
-    transform: scale(1.1);
+  transform: scale(1.1);
 }
 
-
 .fa-facebook-f:hover {
-    transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .fa-pinterest-p:hover {
-    transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .fa-whatsapp:hover {
-    transform: scale(1.1);
+  transform: scale(1.1);
 }
 
-
 .redes-sociais {
-    display: flex;
-    gap: 5px;
+  display: flex;
+  gap: 5px;
 }
 
 .fa-youtube,
@@ -282,162 +260,151 @@ aside {
 .fa-facebook-f,
 .fa-whatsapp,
 .fa-pinterest-p {
-
-    width: 50px;
-    border-radius: 50px;
+  width: 50px;
+  border-radius: 50px;
 }
 
 footer {
-    background-color: black;
+  background-color: black;
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 10%;
+}
+
+a {
+  text-decoration: none;
+}
+
+label {
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  display: flex;
+  width: 100%;
+  height: 60px;
+}
+
+.fa-bars {
+  display: none;
+}
+
+@media (max-width: 800px) {
+  #itens {
+    background-color: rgb(52, 52, 131);
+    border-radius: 0 0 10px 10px;
+    position: fixed;
+    margin-top: 60px;
+    text-align: center;
+    width: 100%;
+  }
+
+  #itens li {
+    background-color: ;
+    transition: 0.3s all;
+    height: 50px;
+  }
+
+  #itens a {
+    color: white;
+  }
+
+  #itens li:hover {
+    background-color: rgb(84, 84, 126);
+  }
+  #itens button {
+    width: 200px;
+    height: 50px;
+    border-radius: 50px;
+    border: none;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    margin-bottom: 18px;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: orangered;
+  }
+  #itens button:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+  }
+
+  menu li {
+    margin: 15px;
+    list-style-type: none;
+  }
+
+  .fa-bars {
+    cursor: pointer;
+    font-size: 50px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    color: white;
+    width: 50px;
+    height: 50px;
+  }
+
+  .redes-sociais {
+    background-color: green;
+    font-size: 20px;
+  }
+
+  .menu ul {
+    border-radius: ;
+    display: none;
+  }
+
+  section {
+    width: 100%;
+    margin: 0;
+  }
+
+  .section p {
+    text-align: justify;
+    margin: 0 5% 0 5%;
+    font-size: 15px;
+  }
+
+  .section img {
+    border-radius: 5px;
+    display: flex;
+    width: 90%;
+    height: auto;
+    margin: 0 5% 0 5%;
+  }
+
+  footer .redes-sociais {
+    padding-bottom: 80px;
+    font-size: 15px;
+
     display: flex;
     position: absolute;
     justify-content: center;
     align-items: center;
     background-color: rgb(52, 52, 131);
     width: 100%;
-    height: 130px;
-}
+    height: 100%;
+  }
 
+  footer .redes-sociais i {
+    width: 30px;
+    height: 30px;
+  }
+  footer .redessociais {
+  }
 
-a {
-    text-decoration: none;
-}
-
-label {
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    display: flex;
-    width: 100%;
-    height: 60px;
-
-}
-
-.fa-bars {
+   {
     display: none;
-}
-
-@media (max-width: 800px) {
-
-    #itens {
-        background-color: rgb(52, 52, 131);
-        border-radius: 0 0 10px 10px;
-        position: fixed;
-        margin-top: 60px;
-        text-align: center;
-        width: 100%;
-
-    }
-
-    #itens li {
-        background-color: ;
-        transition: 0.3s all;
-        height: 50px;
-    }
-
-    #itens a {
-        color: white;
-    }
-
-    #itens li:hover {
-        background-color: rgb(84, 84, 126);
-    }
-    #itens button{
-        width: 200px;
-        height: 50px;
-        border-radius: 50px;
-        border: none;
-        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-        margin-bottom: 18px;
-        font-size: 20px;
-        cursor: pointer;
-        background-color: orangered;
-    }
-    #itens button:hover{
-        transform: scale(1.1);
-        transition: 0.5s;
-    }
-
-    menu li {
-        margin: 15px;
-        list-style-type: none;
-    }
-
-    .fa-bars {
-        cursor: pointer;
-        font-size: 50px;
-        text-align: center;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: absolute;
-        color: white;
-        width: 50px;
-        height: 50px;
-
-    }
-
-    .redes-sociais {
-
-        background-color: green;
-        font-size: 20px
-    }
-
-
-    .menu ul {
-        border-radius: ;
-        display: none;
-    }
-
-    section {
-        width: 100%;
-        margin: 0;
-    }
-
-    .section p {
-        text-align: justify;
-        margin: 0 5% 0 5%;
-        font-size: 15px;
-    }
-
-    .section img {
-        border-radius: 5px;
-        display: flex;
-        width: 90%;
-        height: auto;
-        margin: 0 5% 0 5%;
-
-    }
-
-    footer .redes-sociais {
-        padding-bottom: 80px;
-        font-size: 15px;
-        display: flex;
-        position: absolute;
-        justify-content: center;
-        align-items: center;
-        background-color: rgb(52, 52, 131);
-        width: 100%;
-        height: 100%;
-
-    }
-
-    footer .redes-sociais i {
-        width: 30px;
-        height: 30px;
-
-    }
-
-    aside {
-        display: none;
-    }
+  }
 }
 
 @media (min-width: 450) {
-
-    footer .redes-sociais {
-        display: none;
-    }
-
-
+  footer .redes-sociais {
+    display: none;
+  }
 }
