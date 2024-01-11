@@ -6,8 +6,31 @@
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
+
 footer .redes-sociais {
+  margin-top: auto;
+  margin-bottom: 10px;
+  height: fit-content;
   gap: 40px;
+}
+.redes-sociais h1 {
+  display: grid;
+  grid-column: auto;
+
+  background-color: green;
+}
+footer .redes-sociais i {
+  display: flex;
+  font-size: 90%;
+}
+footer h1 {
+  margin-bottom: 10px;
+  font-size: 15px;
+  display: flex;
+  justify-content: center;
+}
+.follow {
+  margin-top: auto;
 }
 body {
   background-color: white;
@@ -65,8 +88,9 @@ body {
 
 section {
   padding-top: 20%;
-  margin: 0 0 0 15%;
-  width: 70%;
+  margin: 0 auto;
+  width: 10;
+
   height: 100%;
 }
 
@@ -99,18 +123,6 @@ section {
   height: auto;
 }
 
-aside {
-  position: fixed;
-  background-color: #cccccc;
-  margin-bottom: 240px;
-  padding-top: 2px;
-  display: grid;
-  align-content: center;
-  margin-top: 70px;
-  width: 20%;
-  height: 80%;
-}
-
 .fish-list ol {
   list-style: none;
   list-style-position: inside;
@@ -138,9 +150,9 @@ aside {
   align-items: center;
   border-radius: px;
   cursor: pointer;
-  width: fit-content;
+
   width: 50px;
-  height: 50px;
+  height: 100%;
   background-color: #c4302b;
   color: white;
 }
@@ -265,13 +277,13 @@ aside {
 }
 
 footer {
-  background-color: black;
+  background-color: rgb(134, 134, 134);
   display: flex;
   position: absolute;
   justify-content: center;
-  align-items: center;
+
   width: 100%;
-  height: 10%;
+  height: 50vh;
 }
 
 a {
@@ -290,10 +302,14 @@ label {
 .fa-bars {
   display: none;
 }
-
+@media (min-width: 800px) {
+  #burguer {
+    display: none;
+  }
+}
 @media (max-width: 800px) {
   #itens {
-    background-color: rgb(52, 52, 131);
+    background-color: rgb(134, 134, 134);
     border-radius: 0 0 10px 10px;
     position: fixed;
     margin-top: 60px;
@@ -312,7 +328,7 @@ label {
   }
 
   #itens li:hover {
-    background-color: rgb(84, 84, 126);
+    background-color: rgb(134, 134, 134);
   }
   #itens button {
     width: 200px;
@@ -350,7 +366,6 @@ label {
   }
 
   .redes-sociais {
-    background-color: green;
     font-size: 20px;
   }
 
@@ -377,29 +392,33 @@ label {
     height: auto;
     margin: 0 5% 0 5%;
   }
+  footer .follow {
+    margin-bottom: 0;
 
-  footer .redes-sociais {
-    padding-bottom: 80px;
+    width: 80%;
+    height: fit-content;
+  }
+  footer h1 {
+    margin-top: auto;
     font-size: 15px;
-
     display: flex;
-    position: absolute;
+    justify-content: center;
+  }
+  footer .redes-sociais {
+    padding-bottom: 0px;
+    font-size: 15px;
+    display: flex;
+    position: relative;
     justify-content: center;
     align-items: center;
-    background-color: rgb(52, 52, 131);
+
     width: 100%;
-    height: 100%;
+    height: fit-content;
   }
 
   footer .redes-sociais i {
     width: 30px;
     height: 30px;
-  }
-  footer .redessociais {
-  }
-
-   {
-    display: none;
   }
 }
 
